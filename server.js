@@ -13,8 +13,10 @@ SQL.connect();
 Schema.add({
 	name: 'Test',
 	fields: [
+		{ name: 'dt_key', type: 'int', autoIncrement: true },
 		{ name: 'dt', type: 'varchar', size: 32 }
-	]
+	],
+	primaryKey: 'dt_key'
 });
 
 HttpChild.requestHandler = function() {
