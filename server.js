@@ -10,6 +10,9 @@ Config.mysql = {
 SQL = new MySQL();
 SQL.connect();
 
+include('lib/Server.js');
+include('lib/Schema.js');
+
 Schema.add({
 	name: 'Test',
 	fields: [
