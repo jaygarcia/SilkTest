@@ -3,10 +3,10 @@
 <html>
         <head>
                 <title>Schema / ExtJS Demo</title>
-                <link rel="stylesheet" type="text/css" href="<%= ext %>/resources/css/ext-all.css" />
+<%//                <link rel="stylesheet" type="text/css" href="<%= ext %>/resources/css/ext-all.css" /> %>
         </head>
         <body>
-        </script>
 		<%= date %>
+		<%= '<pre>' + print_r(Schema.find('Test', {})) %>
         </body>
 </html>
